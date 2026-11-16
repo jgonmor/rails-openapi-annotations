@@ -7,10 +7,11 @@ Gem::Specification.new do |spec|
   spec.version = Rails::Openapi::Annotations::VERSION
   spec.authors = ["Jgonmor"]
   spec.email = ["contact@jgonmor.com"]
+  spec.homepage = "https://github.com/jgonmor/rails-openapi-annotations"
 
   spec.summary = "Generate OpenAPI documentation from Rails controller annotations"
   spec.description = "A Rails extension that generates OpenAPI 3 documentation from compact controller annotations."
-  spec.license = "MIT"
+  spec.license = "GNU General Public License v3.0"
   spec.required_ruby_version = ">= 3.2.0"
 
   # Uncomment the line below to require MFA for gem pushes.
@@ -25,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.files = IO.popen(%w[git ls-files -z], chdir: __dir__, err: IO::NULL) do |ls|
     ls.readlines("\x0", chomp: true).reject do |f|
       (f == gemspec) ||
+        f.end_with?(".gem") ||
         f.start_with?(*%w[bin/ Gemfile .gitignore .standard.yml])
     end
   end
