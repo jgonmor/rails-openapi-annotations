@@ -1,8 +1,33 @@
-/.bundle/
-/.yardoc
-/_yardoc/
-/coverage/
-/doc/
-/pkg/
-/spec/reports/
-/tmp/
+# Bundler
+.bundle/
+vendor/bundle/
+
+# Build artifacts
+pkg/
+coverage/
+*.gem
+
+# Runtime files
+log/*
+tmp/*
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+/config/master.key
+
+# Debugging
+.byebug_history
+
+# Ruby LSP
+.ruby-lsp/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editors
+*.swp
+*.swo
+/.vscode/
