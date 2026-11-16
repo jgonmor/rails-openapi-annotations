@@ -44,7 +44,7 @@ Add the gem to the application's `Gemfile`:
 ```ruby
 gem "rails-openapi-annotations",
     git: "https://github.com/jgonmor/rails-openapi-annotations.git",
-    tag: "v0.0.1",
+    tag: "v0.1.0",
     require: "rails/openapi/annotations"
 ```
 
@@ -483,7 +483,7 @@ Añade la gema al `Gemfile` de la aplicación:
 ```ruby
 gem "rails-openapi-annotations",
     git: "https://github.com/jgonmor/rails-openapi-annotations.git",
-    tag: "v0.0.1",
+    tag: "v0.1.0",
     require: "rails/openapi/annotations"
 ```
 
