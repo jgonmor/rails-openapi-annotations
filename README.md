@@ -97,10 +97,9 @@ The following environment variables customize the generated document:
 For example:
 
 ```bash
-OPENAPI_TITLE="Inventory API" \
-OPENAPI_VERSION="1.2.0" \
-OPENAPI_SERVER_URL="https://api.example.com" \
-bundle exec rake openapi:from_controllers
+OPENAPI_TITLE=Inventory API
+OPENAPI_VERSION=1.2.0 
+OPENAPI_SERVER_URL="https://api.example.com"
 ```
 
 ## Controller annotations
@@ -536,10 +535,9 @@ Las siguientes variables permiten personalizar la información general del docum
 Ejemplo:
 
 ```bash
-OPENAPI_TITLE="Inventory API" \
-OPENAPI_VERSION="1.2.0" \
-OPENAPI_SERVER_URL="https://api.example.com" \
-bundle exec rake openapi:from_controllers
+OPENAPI_TITLE=Inventory API
+OPENAPI_VERSION=1.2.0
+OPENAPI_SERVER_URL="https://api.example.com"
 ```
 
 ## Anotaciones en los controladores
